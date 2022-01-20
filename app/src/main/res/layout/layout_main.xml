@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrMain"
+        android:layout_width="match_parent"
+        android:background="@color/home_blue"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Attendance Tracking System"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/boldsans"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:gravity="center"
+        android:id="@+id/rytMain"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnrLogo"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center"
+            android:background="@color/Cyan"
+
+            >
+
+            <com.joooonho.SelectableRoundedImageView
+                android:text="LOGO"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent"
+                android:src="@drawable/attendance_image"
+                android:layout_margin="@dimen/_3sdp"
+                android:id="@+id/imgLogo" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrEmp"
+
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center"
+            android:background="@color/Cyan"
+            android:layout_margin="@dimen/_3sdp"
+
+            android:layout_toRightOf="@id/lnrLogo"
+            >
+
+            <TextView
+                android:text="Employee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:fontFamily="@font/boldsans"
+                android:textColor="#000000"
+                android:background="@drawable/roundbg_theme1"
+                android:id="@+id/lblEmployee" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrAbout"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center"
+            android:background="@color/Cyan"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_below="@id/lnrLogo"
+            >
+
+
+            <TextView
+                android:text="Entry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/boldsans"
+                android:textColor="#000000"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/roundbg_theme1"
+                android:id="@+id/lblAboutUs" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lnrAtt"
+            android:background="@color/Cyan"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center"
+            android:layout_below="@id/lnrEmp"
+            android:layout_toRightOf="@id/lnrAbout"
+            >
+
+            <TextView
+                android:text="Attendance"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:fontFamily="@font/boldsans"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/roundbg_theme1"
+                android:id="@+id/lblAttendance" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"></LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
